@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <DataStateHandler :data-exists="favourites.length" :is-loading="false" :is-error="false" no-data-message="You haven't added any characters to your favorites yet. Visit the character list to add some!" :back-button-visible="true">
+    <DataStateHandler :data-exists="!!favourites.length" :is-loading="false" :is-error="false" no-data-message="You haven't added any characters to your favorites yet. Visit the character list to add some!" :back-button-visible="true">
     <div class="container-fluid">
       <div class="card-container">
         <CharacterCard
