@@ -21,9 +21,14 @@
 </template>
 
 <script setup lang="ts">
+interface BreadcrumbItem {
+  title: string;
+  path: string;
+}
+
 defineProps({
   items: {
-    type: Array,
+    type: Array<BreadcrumbItem>,
     required: true,
     default: () => [],
   },
