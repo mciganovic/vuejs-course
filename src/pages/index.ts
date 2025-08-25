@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import CharacterListPage from './CharacterListPage.vue'
 import CharacterDetailPage from './CharacterDetailPage.vue'
 import FavoritesPage from './FavoritesPage.vue'
+import NotFoundPage from './NotFoundPage.vue'
 
 const routes: RouteRecordRaw[] = [
     {
@@ -23,6 +24,11 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/favourites',
         component: FavoritesPage
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: NotFoundPage,
     }
 ]
 
