@@ -8,7 +8,7 @@ export function useFetch<T>(
 ) {
     const data = ref<T | null>(null)
     const isLoading = ref(false)
-    const error = ref<unknown | null>(null)
+    const error = ref<any | null>(null)
 
     const fetchData = async () => {
         isLoading.value = true

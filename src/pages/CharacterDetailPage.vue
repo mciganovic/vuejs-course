@@ -6,7 +6,7 @@
         :isError="!!error"
         :errorMessage="error?.message"
         noDataMessage="No character details found."
-        backButtonVisible="true"
+        :backButtonVisible="true"
     >
     <div v-if="character" class="character-detail">
       <Breadcrumb :items="breadcrumbItems" />
