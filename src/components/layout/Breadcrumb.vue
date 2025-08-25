@@ -24,6 +24,7 @@
 interface BreadcrumbItem {
   title: string;
   clickable: boolean
+  route?: string
 }
 
 defineProps({
