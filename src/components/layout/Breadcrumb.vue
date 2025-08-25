@@ -23,7 +23,7 @@
 <script setup lang="ts">
 interface BreadcrumbItem {
   title: string;
-  path: string;
+  clickable: boolean
 }
 
 defineProps({
